@@ -1,3 +1,40 @@
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  .container {
+    text-align: center;
+    background-color: rebeccapurple;
+    height: 100%;
+  }
+
+  .title {
+    color: hotpink;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 24px;
+  }
+
+  .dice {
+    padding: 20px;
+    background-color: rebeccapurple;
+    border: 2px solid hotpink;
+    color: hotpink;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
+</style>
+
+<div class="container">
+  <div class="title">Dice Roller 9000</div>
+  <button class="dice" onclick="handleButtonClick()">20</button>
+</div>
+
 <script>
   // click button
   // function to handle button click
@@ -19,7 +56,4 @@
     // alert the result
     alert(result);
   }
-
-  // ready to click again
-  handleButtonClick();
 </script>
