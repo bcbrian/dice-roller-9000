@@ -27,21 +27,33 @@
     font-family: sans-serif;
     font-weight: bold;
     font-size: 20px;
+    height: 80px;
+    width: 80px;
+  }
+
+  .dice-tray {
+    padding: 4px;
   }
 </style>
 
 <div class="container">
   <div class="title">Dice Roller 9000</div>
-  <button class="dice" onclick="handleButtonClick()">20</button>
+  <div class="dice-tray">
+    <button class="dice" onclick="handleButtonClick(6)">6</button>
+  </div>
+  <div class="dice-tray">
+    <button class="dice" onclick="handleButtonClick(20)">20</button>
+  </div>
 </div>
 
 <script>
   // click button
   // function to handle button click
-  function handleButtonClick() {
-    let roll = rollTheDice(20);
+  function handleButtonClick(dice) {
+    let roll = rollTheDice(dice);
     displayTheResults(roll);
   }
+
   // rolled a dice
 
   // function to roll the dice
