@@ -1,14 +1,25 @@
 <script>
   // click button
   // function to handle button click
+  function handleButtonClick() {
+    let roll = rollTheDice(20);
+    displayTheResults(roll);
+  }
   // rolled a dice
 
   // function to roll the dice
-  // return a random number 1-20
+  function rollTheDice(max) {
+    // return a random number 1-20
+    return Math.ceil(Math.random() * max);
+  }
 
   // displayed the results
   // function to display the results
-  // alert the result
+  function displayTheResults(result) {
+    // alert the result
+    alert(result);
+  }
 
   // ready to click again
+  handleButtonClick();
 </script>
